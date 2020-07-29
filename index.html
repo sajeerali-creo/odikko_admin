@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-white sidebar sidebar-light accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon">
+          <img src="img/logo-main.svg">
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="icon-doshboard"></i>
+          <span>Dashboard</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="product.html">
+          <i class="icon-product"></i>
+          <span>Product</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="catogory.html">
+          <i class="icon-category"></i>
+          <span>Catogory</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="order.html">
+          <i class="icon-order"></i>
+          <span>Order</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="customer.html">
+          <i class="icon-customers"></i>
+          <span>Customer</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="offer.html">
+          <i class="icon-offer"></i>
+          <span>Offer</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="coupens.html">
+          <i class="icon-coupens"></i>
+          <span>Coupens</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="seller.html">
+          <i class="icon-seller"></i>
+          <span>Seller</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="rating.html">
+          <i class="icon-rating-reviews"></i>
+          <span>Rating & Review</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="settings.html">
+          <i class="icon-settings"></i>
+          <span>Settings</span></a>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+      <li class="nav-item ">
+        <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+        <!-- <span>Switch to Manager</span></a> -->
+        <div class="custom-control custom-switch ml-4 mr-4 mt-3 mb-3">
+          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">Switch to Manager</label>
+        </div>
+      </li>
+      <hr class="sidebar-divider d-none d-md-block">
+      <li class="nav-item ">
+        <a class="nav-link" data-toggle="modal" data-target="#logoutModal">
+          <i class="icon-logout"></i>
+          <span>Logout</span></a>
+      </li>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form> -->
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="icon-bell"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Notification
+                  <a href="#" class="float-right red">Clear All</a>
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">More Feeds</a>
+              </div>
+            </li>
+
+
+
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-bottom-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-gray-900 mb-1">Total Revenue</div>
+                      <div class="text-xs font-weight-bold text-gray-500 mb-4">(Last 30 Days)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">$40,000</div>
+                      <p class="mb-0 text-muted">
+                        <span class="text-success mr-2 text-xs"><i class="fas fa-arrow-up"></i> 5.27%</span>
+                        <span class="text-nowrap text-xs">(Previous 30 days)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-bottom-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-gray-900 mb-1">Total Order</div>
+                      <div class="text-xs font-weight-bold text-gray-500 mb-4">(Last 30 Days)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">$40,000</div>
+                      <p class="mb-0 text-muted">
+                        <span class="text-success mr-2 text-xs"><i class="fas fa-arrow-up"></i> 5.27%</span>
+                        <span class="text-nowrap text-xs">(Previous 30 days)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-bottom-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-gray-900 mb-1">New Customer</div>
+                      <div class="text-xs font-weight-bold text-gray-500 mb-4">(Last 30 Days)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">$40,000</div>
+                      <p class="mb-0 text-muted">
+                        <span class="text-danger mr-2 text-xs"><i class="fas fa-arrow-down"></i> 5.27%</span>
+                        <span class="text-nowrap text-xs">(Previous 30 days)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-bottom-primary shadow h-100 py-2 ">
+                <div class="card-body">
+
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-lg font-weight-bold text-gray-900 mb-1">Total Delivery</div>
+                      <div class="text-xs font-weight-bold text-gray-500 mb-4">(Last 30 Days)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-900">$40,000</div>
+                      <p class="mb-0 text-muted">
+                        <span class="text-success mr-2 text-xs"><i class="fas fa-arrow-up"></i> 5.27%</span>
+                        <span class="text-nowrap text-xs">(Previous 30 days)</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-12 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <div class="m-0">
+                    <div class="text-lg font-weight-bold text-gray-900 mb-1 text-primary"> Sale History</div>
+                    <div class="text-xs font-weight-bold text-gray-500">(Last 1 year)</div>
+                  </div>
+                  <div class="m-0 text-center">
+                    <div class="text-lg font-weight-bold text-gray-900 mb-1 text-primary">₹ 10,400</div>
+                    <p class="mb-0 text-muted">
+                      <span class="text-success mr-2 text-xs "><i class="fas fa-arrow-up"></i> 5.27%</span>
+                      <span class="text-nowrap text-xs ">(Previous 30 days)</span>
+                    </p>
+                  </div>
+
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Quarterly</a>
+                      <a class="dropdown-item" href="#">Monthly</a>
+                      <a class="dropdown-item" href="#">Yearly</a>
+                      <div class="dropdown-divider"></div>
+                      <div class="dropdown-item">Export to Excel</div>
+                      <div class="dropdown-item">Print Report</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Content Column -->
+            <div class="col-lg-12 mb-4">
+
+              <!-- Project Card Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <div class="m-0">
+                    <div class="text-lg font-weight-bold text-gray-900 mb-1 text-primary"> Sale History</div>
+                    <div class="text-xs font-weight-bold text-gray-500">(Last 1 year)</div>
+                  </div>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Actions</div>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Quarterly</a>
+                      <a class="dropdown-item" href="#">Monthly</a>
+                      <a class="dropdown-item" href="#">Yearly</a>
+                      <div class="dropdown-divider"></div>
+                      <div class="dropdown-item">Export to Excel</div>
+                      <div class="dropdown-item">Print Report</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body py-3">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 mb-4 mt-3">
+                      <h4 class="small font-weight-bold">Horlicks <span class="float-right">₹ 2,000</span></h4>
+                      <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="20"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h4 class="small font-weight-bold">Nestle <span class="float-right">₹ 3,000</span></h4>
+                      <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="40"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h4 class="small font-weight-bold">Mansoon <span class="float-right">₹ 2,000</span></h4>
+                      <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <h4 class="small font-weight-bold">Fam Fresh <span class="float-right">₹ 1,000</span></h4>
+                      <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="80"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <a href="#" class="text-xs font-weight-bold text-gray-500">More</a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 mb-4 mt-3 m-0 text-center">
+                      <div class="d-flex flex-row align-items-center justify-content-center min-h-200">
+                        <div>
+                          <div class="text-xs font-weight-bold text-gray-600">Total Sellers</div>
+                          <div class="h1 font-weight-bold text-gray-900 mb-1 text-primary">₹15,382</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; ODIKKO 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script>
+
+</body>
+
+</html>

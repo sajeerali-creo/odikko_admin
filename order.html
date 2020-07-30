@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-white sidebar sidebar-light accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <img src="img/logo-main.svg">
+                </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="icon-doshboard"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="product.html">
+                    <i class="icon-product"></i>
+                    <span>Product</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="catogory.html">
+                    <i class="icon-category"></i>
+                    <span>Catogory</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="order.html">
+                    <i class="icon-order"></i>
+                    <span>Order</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="customer.html">
+                    <i class="icon-customers"></i>
+                    <span>Customer</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="offer.html">
+                    <i class="icon-offer"></i>
+                    <span>Offer</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="coupens.html">
+                    <i class="icon-coupens"></i>
+                    <span>Coupens</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="seller.html">
+                    <i class="icon-seller"></i>
+                    <span>Seller</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="rating.html">
+                    <i class="icon-rating-reviews"></i>
+                    <span>Rating & Review</span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="settings.html">
+                    <i class="icon-settings"></i>
+                    <span>Settings</span></a>
+            </li>
+            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item ">
+                <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                <!-- <span>Switch to Manager</span></a> -->
+                <div class="custom-control custom-switch ml-4 mr-4 mt-3 mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Switch to Manager</label>
+                </div>
+            </li>
+            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item ">
+                <a class="nav-link" data-toggle="modal" data-target="#logoutModal">
+                    <i class="icon-logout"></i>
+                    <span>Logout</span></a>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-bell"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notification
+                                    <a href="#" class="float-right red">Clear All</a>
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">More Feeds</a>
+                            </div>
+                        </li>
+
+
+
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle"
+                                    src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Begin Page Content -->
+                    <div class="heading-page-each">
+                        <div class="d-sm-flex  align-items-center justify-content-between mb-4">
+                            <div class="tab-card-header">
+                                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab"
+                                            aria-controls="One" aria-selected="true">General Orders</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab"
+                                            aria-controls="Two" aria-selected="false">Pre Orders</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab"
+                                            aria-controls="Three" aria-selected="false">Bracketed Delivery orders</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <form
+                                    class="d-none d-sm-inline-block form-inline mr-auto ml-md-6 my-2 my-md-0 mw-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-white border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-sm-flex  align-items-center justify-content-between mb-4">
+                        <h3><strong class="text-gray-900">56</strong> Order</h3>
+                        <div class="form-group width-200">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Action</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body padding-0">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active p-3 table-responsive" id="one" role="tabpanel">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1"></label>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">Customer ID</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Delivery Address</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Contact</th>
+                                                <th scope="col" class="text-right">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-secondary">Processing</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-warning">Pending</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-danger">Failed</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade p-3 table-responsive" id="two" role="tabpanel"
+                                    aria-labelledby="two-tab">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1"></label>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">Customer ID</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Delivery Address</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Contact</th>
+                                                <th scope="col" class="text-right">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade p-3 table-responsive" id="three" role="tabpanel"
+                                    aria-labelledby="three-tab">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1"></label>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">Customer ID</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Delivery Address</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Contact</th>
+                                                <th scope="col" class="text-right">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    4189
+                                                </td>
+                                                <td>06/15/1959</td>
+                                                <td>43A Street, Plarivattam, Kochi</td>
+                                                <td>1687$</td>
+                                                <td>(456)433-4369</td>
+                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <span class="page-link">Previous</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                2
+                                <span class="sr-only">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; ODIKKO 2020</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="orderdetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-gray-900 bold" id="exampleModalLabel">
+                        <stron>Order Details</stron>
+                    </h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-sm-flex  align-items-center justify-content-center mb-4">
+                        <div class="product-image-large mr-4">
+                            <img src="img/banan.png">
+                        </div>
+                        <div>
+                            <div class="h6 mt-3">Indian Banana</div>
+                            <div class="h1 bold text-gray-900 font-weight-bold">₹ 200</div>
+                            <div class="h6 bold text-gray-600">Category: Fruites</div>
+                            <div class="h6 bold text-gray-600">ID: Fruites</div>
+                            <div class="h6 bold text-gray-600">Date: Fruites</div>
+                            <div class="h6 bold text-gray-600">Address: Seems, 3rd floor, Vazhachal, Kochi</div>
+                        </div>
+                    </div>
+                    <div class="h5 text-gray-900 font-weight-bold">Status</div>
+                    <div class="h6 mb-4">Change the status below section</div>
+                    <div class="d-sm-flex  align-items-center justify-content-left mb-4">
+                        <div class="progress-order-box active-progress-order">Ordered</div>
+                        <div class="progress-order-box active-progress-order">Processing</div>
+                        <div class="progress-order-box">On the way</div>
+                        <div class="progress-order-box">Delivered</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mt-3">
+                            <div class="form-group">
+                                <label class="text-gray-600" for="inputState">Delivery Date</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <div class="form-group">
+                                <label class="text-gray-600" for="inputState">Delivery Time</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-3">
+                            <div class="form-group">
+                                <label class="text-gray-600" for="inputState">Status</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/dropzone.js"></script>
+
+
+
+</body>
+
+</html>

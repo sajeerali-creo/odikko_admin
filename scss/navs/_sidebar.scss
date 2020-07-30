@@ -11,6 +11,10 @@
       text-align: center;
       padding: 0.75rem 1rem;
       width: $sidebar-collapsed-width;
+      display: flex!important;
+      align-items: center!important;
+      justify-content: center!important;
+
       span {
         font-size: 0.65rem;
         display: none;
@@ -162,9 +166,9 @@
         margin: 0 1rem;
       }
       .nav-link {
-        display: block;
+        display: block!important;
         width: 100%;
-        text-align: left;
+        text-align: left!important;
         padding: 1rem;
         width: $sidebar-base-width;
         i {

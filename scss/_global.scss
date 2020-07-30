@@ -176,10 +176,54 @@ a {
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
   border:none;
+  color: $cyan;
+}
+.nav-link{
+  color: $gray-400;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
   border:none;
+  color: $cyan;
 }
+
+  tr, th,
+  td {
+    padding: $table-cell-padding-sm;
+    &:hover{
+      background-color: $gray-100;
+      cursor: pointer;
+    }
+  }
+
+  .product-image-large{
+    border:1px solid $gray-200;
+    width: 175px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 90%;
+      height: 175px;
+      object-fit: contain;
+    }
+  }
+  .progress-order-box{
+    height: 50px;
+    width: 100%;
+    background-color: $gray-100;
+    color: $gray-400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 160px;
+  }
+  .active-progress-order{
+    background-color: $cyan;
+    color: $white;
+  }
+
 // Heading mob frendly
 @media (max-width: 576px) {
   .heading-page-each {

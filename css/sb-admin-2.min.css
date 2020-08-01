@@ -7959,21 +7959,25 @@ a:focus {
 .width-300 {
   width: 300px !important; }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
   border: none;
   color: #2EACC2; }
 
 .nav-link {
   color: #d1d3e2; }
 
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
   border: none;
   color: #2EACC2; }
 
-tr, th,
+tr,
+th,
 td {
   padding: 0.3rem; }
-  tr:hover, th:hover,
+  tr:hover,
+  th:hover,
   td:hover {
     background-color: #f8f9fc;
     cursor: pointer; }
@@ -8004,6 +8008,53 @@ td {
 .active-progress-order {
   background-color: #2EACC2;
   color: #fff; }
+
+.append {
+  height: 40px;
+  width: 40px;
+  bis: g;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 5px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px; }
+
+.customer-picture {
+  width: 63px;
+  height: 63px;
+  background-color: #f1f1f1;
+  border-radius: 160px;
+  overflow: hidden;
+  position: relative; }
+  .customer-picture img {
+    width: 100%;
+    height: 63px;
+    object-fit: cover;
+    position: absolute; }
+
+.width-200 {
+  width: 200px; }
+
+.customer-picture:before {
+  content: "\f007";
+  /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: "Font Awesome 5 Free";
+  left: 40%;
+  position: absolute;
+  top: 30%; }
+
+.list-group {
+  flex-direction: row; }
+
+.list-group-item {
+  padding: 10px;
+  border: none;
+  border-radius: 0px !important; }
+
+small, .small {
+  font-size: 70%; }
 
 @media (max-width: 576px) {
   .heading-page-each {
@@ -8202,6 +8253,220 @@ td {
 
 .rotate-n-15 {
   transform: rotate(-15deg); }
+
+.minicolors {
+  position: relative; }
+
+.minicolors-swatch {
+  position: absolute;
+  vertical-align: middle;
+  background: url(jquery.minicolors.png) -80px 0;
+  border: solid 1px #ccc;
+  cursor: text;
+  padding: 0;
+  margin: 0;
+  display: inline-block; }
+
+.minicolors-swatch-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.minicolors input[type=hidden] + .minicolors-swatch {
+  width: 28px;
+  position: static;
+  cursor: pointer; }
+
+/* Panel */
+.minicolors-panel {
+  position: absolute;
+  width: 173px;
+  height: 152px;
+  background: white;
+  border: solid 1px #CCC;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: none; }
+
+.minicolors-panel.minicolors-visible {
+  display: block; }
+
+/* Panel positioning */
+.minicolors-position-top .minicolors-panel {
+  top: -154px; }
+
+.minicolors-position-right .minicolors-panel {
+  right: 0; }
+
+.minicolors-position-bottom .minicolors-panel {
+  top: auto; }
+
+.minicolors-position-left .minicolors-panel {
+  left: 0; }
+
+.minicolors-with-opacity .minicolors-panel {
+  width: 194px; }
+
+.minicolors .minicolors-grid {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 150px;
+  height: 150px;
+  background: url(jquery.minicolors.png) -120px 0;
+  cursor: crosshair; }
+
+.minicolors .minicolors-grid-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: none; }
+
+.minicolors-slider-saturation .minicolors-grid {
+  background-position: -420px 0; }
+
+.minicolors-slider-saturation .minicolors-grid-inner {
+  background: url(jquery.minicolors.png) -270px 0; }
+
+.minicolors-slider-brightness .minicolors-grid {
+  background-position: -570px 0; }
+
+.minicolors-slider-brightness .minicolors-grid-inner {
+  background: black; }
+
+.minicolors-slider-wheel .minicolors-grid {
+  background-position: -720px 0; }
+
+.minicolors-slider,
+.minicolors-opacity-slider {
+  position: absolute;
+  top: 1px;
+  left: 152px;
+  width: 20px;
+  height: 150px;
+  background: white url(jquery.minicolors.png) 0 0;
+  cursor: row-resize; }
+
+.minicolors-slider-saturation .minicolors-slider {
+  background-position: -60px 0; }
+
+.minicolors-slider-brightness .minicolors-slider {
+  background-position: -20px 0; }
+
+.minicolors-slider-wheel .minicolors-slider {
+  background-position: -20px 0; }
+
+.minicolors-opacity-slider {
+  left: 173px;
+  background-position: -40px 0;
+  display: none; }
+
+.minicolors-with-opacity .minicolors-opacity-slider {
+  display: block; }
+
+/* Pickers */
+.minicolors-grid .minicolors-picker {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin-top: -6px;
+  margin-left: -6px;
+  background: none; }
+
+.minicolors-grid .minicolors-picker > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  border: solid 2px white;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.minicolors-picker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  background: white;
+  border: solid 1px black;
+  margin-top: -2px;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* Inline controls */
+.minicolors-inline {
+  display: inline-block; }
+
+.minicolors-inline .minicolors-input {
+  display: none !important; }
+
+.minicolors-inline .minicolors-panel {
+  position: relative;
+  top: auto;
+  left: auto;
+  box-shadow: none;
+  z-index: auto;
+  display: inline-block; }
+
+/* Default theme */
+.minicolors-theme-default .minicolors-swatch {
+  top: 5px;
+  left: 5px;
+  width: 18px;
+  height: 18px; }
+
+.minicolors-theme-default.minicolors-position-right .minicolors-swatch {
+  left: auto;
+  right: 5px; }
+
+.minicolors-theme-default.minicolors {
+  width: auto;
+  display: inline-block; }
+
+.minicolors-theme-default .minicolors-input {
+  height: 20px;
+  width: auto;
+  display: inline-block;
+  padding-left: 26px; }
+
+.minicolors-theme-default.minicolors-position-right .minicolors-input {
+  padding-right: 26px;
+  padding-left: inherit; }
+
+/* Bootstrap theme */
+.minicolors-theme-bootstrap .minicolors-swatch {
+  top: 3px;
+  left: 3px;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px; }
+
+.minicolors-theme-bootstrap.minicolors-position-right .minicolors-swatch {
+  left: auto;
+  right: 3px; }
+
+.minicolors-theme-bootstrap .minicolors-input {
+  padding-left: 44px; }
+
+.minicolors-theme-bootstrap.minicolors-position-right .minicolors-input {
+  padding-right: 44px;
+  padding-left: 12px; }
 
 .dropdown .dropdown-menu {
   font-size: 0.85rem; }
@@ -8730,6 +8995,20 @@ td {
     height: 89px;
     object-fit: contain; }
 
+.box-catogory {
+  width: 89px;
+  height: 84px;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; }
+  .box-catogory img {
+    width: 60%;
+    height: 89px;
+    object-fit: contain; }
+
 .chart-area {
   position: relative;
   height: 10rem;
@@ -8841,47 +9120,47 @@ form.user .btn-user {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(51px, 9999px, 46px, 0); }
+    clip: rect(14px, 9999px, 92px, 0); }
   5% {
-    clip: rect(64px, 9999px, 98px, 0); }
+    clip: rect(71px, 9999px, 44px, 0); }
   10% {
-    clip: rect(73px, 9999px, 15px, 0); }
+    clip: rect(48px, 9999px, 72px, 0); }
   15% {
-    clip: rect(26px, 9999px, 7px, 0); }
+    clip: rect(86px, 9999px, 98px, 0); }
   20% {
-    clip: rect(64px, 9999px, 78px, 0); }
+    clip: rect(32px, 9999px, 14px, 0); }
   25% {
-    clip: rect(73px, 9999px, 58px, 0); }
+    clip: rect(86px, 9999px, 48px, 0); }
   30% {
-    clip: rect(32px, 9999px, 11px, 0); }
+    clip: rect(54px, 9999px, 17px, 0); }
   35% {
-    clip: rect(82px, 9999px, 11px, 0); }
+    clip: rect(81px, 9999px, 96px, 0); }
   40% {
-    clip: rect(40px, 9999px, 99px, 0); }
+    clip: rect(2px, 9999px, 70px, 0); }
   45% {
-    clip: rect(62px, 9999px, 75px, 0); }
+    clip: rect(66px, 9999px, 30px, 0); }
   50% {
-    clip: rect(9px, 9999px, 11px, 0); }
+    clip: rect(12px, 9999px, 3px, 0); }
   55% {
-    clip: rect(32px, 9999px, 54px, 0); }
+    clip: rect(81px, 9999px, 48px, 0); }
   60% {
-    clip: rect(42px, 9999px, 49px, 0); }
+    clip: rect(37px, 9999px, 20px, 0); }
   65% {
-    clip: rect(98px, 9999px, 5px, 0); }
+    clip: rect(88px, 9999px, 79px, 0); }
   70% {
-    clip: rect(7px, 9999px, 98px, 0); }
+    clip: rect(20px, 9999px, 55px, 0); }
   75% {
-    clip: rect(45px, 9999px, 62px, 0); }
+    clip: rect(21px, 9999px, 67px, 0); }
   80% {
-    clip: rect(81px, 9999px, 29px, 0); }
+    clip: rect(78px, 9999px, 56px, 0); }
   85% {
-    clip: rect(29px, 9999px, 28px, 0); }
+    clip: rect(97px, 9999px, 31px, 0); }
   90% {
-    clip: rect(91px, 9999px, 20px, 0); }
+    clip: rect(3px, 9999px, 62px, 0); }
   95% {
-    clip: rect(81px, 9999px, 83px, 0); }
+    clip: rect(75px, 9999px, 88px, 0); }
   100% {
-    clip: rect(35px, 9999px, 30px, 0); } }
+    clip: rect(16px, 9999px, 29px, 0); } }
 .error:after {
   content: attr(data-text);
   position: absolute;
@@ -8896,47 +9175,47 @@ form.user .btn-user {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(80px, 9999px, 70px, 0); }
+    clip: rect(22px, 9999px, 51px, 0); }
   5% {
-    clip: rect(37px, 9999px, 60px, 0); }
+    clip: rect(58px, 9999px, 6px, 0); }
   10% {
-    clip: rect(92px, 9999px, 61px, 0); }
+    clip: rect(69px, 9999px, 55px, 0); }
   15% {
-    clip: rect(68px, 9999px, 1px, 0); }
+    clip: rect(72px, 9999px, 71px, 0); }
   20% {
-    clip: rect(91px, 9999px, 19px, 0); }
+    clip: rect(26px, 9999px, 1px, 0); }
   25% {
-    clip: rect(20px, 9999px, 77px, 0); }
+    clip: rect(92px, 9999px, 83px, 0); }
   30% {
-    clip: rect(17px, 9999px, 39px, 0); }
+    clip: rect(34px, 9999px, 56px, 0); }
   35% {
-    clip: rect(41px, 9999px, 10px, 0); }
+    clip: rect(98px, 9999px, 75px, 0); }
   40% {
-    clip: rect(46px, 9999px, 30px, 0); }
+    clip: rect(71px, 9999px, 70px, 0); }
   45% {
-    clip: rect(57px, 9999px, 1px, 0); }
+    clip: rect(95px, 9999px, 27px, 0); }
   50% {
-    clip: rect(19px, 9999px, 11px, 0); }
+    clip: rect(54px, 9999px, 27px, 0); }
   55% {
-    clip: rect(50px, 9999px, 67px, 0); }
+    clip: rect(86px, 9999px, 29px, 0); }
   60% {
-    clip: rect(46px, 9999px, 41px, 0); }
+    clip: rect(47px, 9999px, 37px, 0); }
   65% {
-    clip: rect(93px, 9999px, 85px, 0); }
+    clip: rect(47px, 9999px, 44px, 0); }
   70% {
-    clip: rect(41px, 9999px, 58px, 0); }
+    clip: rect(42px, 9999px, 73px, 0); }
   75% {
-    clip: rect(18px, 9999px, 32px, 0); }
+    clip: rect(51px, 9999px, 49px, 0); }
   80% {
-    clip: rect(10px, 9999px, 84px, 0); }
+    clip: rect(21px, 9999px, 56px, 0); }
   85% {
-    clip: rect(98px, 9999px, 14px, 0); }
+    clip: rect(62px, 9999px, 33px, 0); }
   90% {
-    clip: rect(17px, 9999px, 17px, 0); }
+    clip: rect(39px, 9999px, 95px, 0); }
   95% {
-    clip: rect(37px, 9999px, 71px, 0); }
+    clip: rect(71px, 9999px, 50px, 0); }
   100% {
-    clip: rect(49px, 9999px, 31px, 0); } }
+    clip: rect(49px, 9999px, 45px, 0); } }
 .error:before {
   content: attr(data-text);
   position: absolute;

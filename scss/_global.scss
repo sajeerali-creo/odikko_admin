@@ -174,55 +174,105 @@ a {
   width: 300px !important;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
-  border:none;
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  border: none;
   color: $cyan;
 }
-.nav-link{
+.nav-link {
   color: $gray-400;
 }
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
-  border:none;
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border: none;
   color: $cyan;
 }
 
-  tr, th,
-  td {
-    padding: $table-cell-padding-sm;
-    &:hover{
-      background-color: $gray-100;
-      cursor: pointer;
-    }
-  }
-
-  .product-image-large{
-    border:1px solid $gray-200;
-    width: 175px;
-    height: 175px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-      width: 90%;
-      height: 175px;
-      object-fit: contain;
-    }
-  }
-  .progress-order-box{
-    height: 50px;
-    width: 100%;
+tr,
+th,
+td {
+  padding: $table-cell-padding-sm;
+  &:hover {
     background-color: $gray-100;
-    color: $gray-400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    border-radius: 160px;
+    cursor: pointer;
   }
-  .active-progress-order{
-    background-color: $cyan;
-    color: $white;
+}
+
+.product-image-large {
+  border: 1px solid $gray-200;
+  width: 175px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 90%;
+    height: 175px;
+    object-fit: contain;
   }
+}
+.progress-order-box {
+  height: 50px;
+  width: 100%;
+  background-color: $gray-100;
+  color: $gray-400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 160px;
+}
+.active-progress-order {
+  background-color: $cyan;
+  color: $white;
+}
+.append {
+  height: 40px;
+  width: 40px;
+  bis: g;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 5px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+.customer-picture {
+  width: 63px;
+  height: 63px;
+  background-color: #f1f1f1;
+  border-radius: 160px;
+  overflow: hidden;
+  position: relative;
+  img{
+    width: 100%;
+    height: 63px;
+    object-fit: cover;
+    position: absolute;
+  }
+}
+.width-200{
+  width: 200px;
+}
+.customer-picture:before {
+  content: "\f007";  /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: "Font Awesome 5 Free";
+  left:40%;
+  position:absolute;
+  top:30%;
+}
+.list-group{
+  flex-direction: row;
+}
+.list-group-item{
+  padding: 10px;
+  border:none;
+  border-radius: 0px!important;
+}
+small, .small{
+  font-size: 70%;
+}
 
 // Heading mob frendly
 @media (max-width: 576px) {

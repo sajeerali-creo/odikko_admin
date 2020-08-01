@@ -56,12 +56,12 @@
                     <i class="icon-category"></i>
                     <span>Catogory</span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="order.html">
                     <i class="icon-order"></i>
                     <span>Order</span></a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link" href="customer.html">
                     <i class="icon-customers"></i>
                     <span>Customer</span></a>
@@ -102,7 +102,7 @@
             </li>
             <hr class="sidebar-divider d-none d-md-block">
             <li class="nav-item ">
-                    <a class="nav-link" href="login.html">
+                <a class="nav-link" data-toggle="modal" data-target="#logoutModal">
                     <i class="icon-logout"></i>
                     <span>Logout</span></a>
             </li>
@@ -211,22 +211,7 @@
                     <!-- Begin Page Content -->
                     <div class="heading-page-each">
                         <div class="d-sm-flex  align-items-center justify-content-between mb-4">
-                            <div class="tab-card-header">
-                                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab"
-                                            aria-controls="One" aria-selected="true">General Orders</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab"
-                                            aria-controls="Two" aria-selected="false">Pre Orders</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab"
-                                            aria-controls="Three" aria-selected="false">Bracketed Delivery orders</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <h3><strong class="text-gray-900">56</strong> Customers</h3>
                             <div>
                                 <form
                                     class="d-none d-sm-inline-block form-inline mr-auto ml-md-6 my-2 my-md-0 mw-100 navbar-search">
@@ -244,8 +229,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-sm-flex  align-items-center justify-content-between mb-4">
-                        <h3><strong class="text-gray-900">56</strong> Order</h3>
+                    <div class="d-flex  align-items-center justify-content-between mb-2">
+                        <h6>All list</h6>
                         <div class="form-group width-200">
                             <select class="form-control" id="exampleFormControlSelect1">
                                 <option>Action</option>
@@ -271,11 +256,14 @@
                                                         <label class="custom-control-label" for="customCheck1"></label>
                                                     </div>
                                                 </th>
-                                                <th scope="col">Customer ID</th>
-                                                <th scope="col">Date</th>
-                                                <th scope="col">Delivery Address</th>
-                                                <th scope="col">Amount</th>
+                                                <th scope="col">Image</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">ID</th>
                                                 <th scope="col">Contact</th>
+                                                <th scope="col">Total Order</th>
+                                                <th scope="col">Total Amount</th>
+                                                <th scope="col">Total Point Earn</th>
+                                                <th scope="col">Joining Date</th>
                                                 <th scope="col" class="text-right">Status</th>
                                             </tr>
                                         </thead>
@@ -290,13 +278,20 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                        <img src="img/customer.png">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -309,13 +304,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-secondary">Processing</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -328,13 +329,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-warning">Pending</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -347,13 +354,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-danger">Failed</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -366,13 +379,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -385,13 +404,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -404,13 +429,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -423,13 +454,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -442,13 +479,19 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                             <tr data-toggle="modal" data-target="#orderdetail">
@@ -461,13 +504,94 @@
                                                     </div>
                                                 </th>
                                                 <td>
-                                                    4189
+                                                    <div class="customer-picture">
+                                                    </div>
                                                 </td>
-                                                <td>06/15/1959</td>
-                                                <td>43A Street, Plarivattam, Kochi</td>
-                                                <td>1687$</td>
-                                                <td>(456)433-4369</td>
-                                                <td class="text-right"><span class="badge badge-info">Delivered</span>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="customer-picture">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="customer-picture">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="modal" data-target="#orderdetail">
+                                                <th scope="row">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">
+                                                        </label>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <div class="customer-picture">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    Kathy Elliot
+                                                </td>
+                                                <td>(158)059-2223</td>
+                                                <td>30</td>
+                                                <td>626$</td>
+                                                <td>100</td>
+                                                <td>626$</td>
+                                                <td>20/3/2020</td>
+                                                <td class="text-right"><span class="badge badge-info">Active</span>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -965,66 +1089,53 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title text-gray-900 bold" id="exampleModalLabel">
-                        <stron>Order Details</stron>
+                        <stron>Customer Details</stron>
                     </h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-sm-flex  align-items-center justify-content-center mb-4">
-                        <div class="product-image-large mr-4">
-                            <img src="img/banan.png">
+                    <div class="d-sm-flex  align-items-center justify-content-left mb-4">
+                        <div class="customer-picture mr-3">
+                            <img src="img/customer.png">
                         </div>
                         <div>
-                            <div class="h6 mt-3">Indian Banana</div>
-                            <div class="h1 bold text-gray-900 font-weight-bold">₹ 200</div>
-                            <div class="h6 bold text-gray-600">Category: Fruites</div>
-                            <div class="h6 bold text-gray-600">ID: Fruites</div>
-                            <div class="h6 bold text-gray-600">Date: Fruites</div>
-                            <div class="h6 bold text-gray-600">Address: Seems, 3rd floor, Vazhachal, Kochi</div>
+                            <div class="h6 mt-3 text-gray-900 font-weight-bold">Kathy Elliot</div>
+                            <div class="h6">+91 9995540446</div>
                         </div>
                     </div>
-                    <div class="h5 text-gray-900 font-weight-bold">Status</div>
-                    <div class="h6 mb-4">Change the status below section</div>
-                    <div class="d-sm-flex  align-items-center justify-content-left mb-4">
-                        <div class="progress-order-box active-progress-order">Ordered</div>
-                        <div class="progress-order-box active-progress-order">Processing</div>
-                        <div class="progress-order-box">On the way</div>
-                        <div class="progress-order-box">Delivered</div>
+                    <div>
+                        <hr>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6 mt-3">
-                            <div class="form-group">
-                                <label class="text-gray-600" for="inputState">Delivery Date</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="form-group">
-                                <label class="text-gray-600" for="inputState">Delivery Time</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="h6 mb-4"><span class="d-inline-block width-200">Total Order:</span> 30</div>
+                    <div class="h6 mb-4"><span class="d-inline-block width-200">Total Amount:</span> 626$</div>
+                    <div class="h6 mb-4"><span class="d-inline-block width-200">Total Point Earn:</span> 200</div>
+                    <div class="h6 mb-4"><span class="d-inline-block width-200">Joining Date:</span> 05/29/1965</div>
+                    <div class="h6 mb-4"><span class="d-inline-block width-200">Status:</span><span
+                            class="badge badge-info">Active</span></div>
+
+                    <div>
+                        <hr>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 mt-3">
+                        <div class="col-md-12 mt-3">
                             <div class="form-group">
-                                <label class="text-gray-600" for="inputState">Status</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
+                                <label class="text-gray-800" for="exampleFormControlInput1">Change Status</label>
+                                <div class="clearfix"></div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline5" name="customRadioInline5"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline5">Active</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline6" name="customRadioInline6"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline6">Inactive</label>
+                                </div>
                             </div>
                         </div>
-
                     </div>
 
 

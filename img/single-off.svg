@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="552.295" height="398.705" viewBox="0 0 552.295 398.705">
+  <defs>
+    <filter id="zaib-tse-KVv5lFOMY1E-unsplash" x="0" y="0" width="552.295" height="398.705" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_787" data-name="Group 787" transform="translate(14997.5 -7645.5)">
+    <g transform="matrix(1, 0, 0, 1, -14997.5, 7645.5)" filter="url(#zaib-tse-KVv5lFOMY1E-unsplash)">
+      <path id="zaib-tse-KVv5lFOMY1E-unsplash-2" data-name="zaib-tse-KVv5lFOMY1E-unsplash" d="M5.679,0H249.616A5.679,5.679,0,0,1,255.3,5.679V96.026a5.679,5.679,0,0,1-5.679,5.679H5.679A5.679,5.679,0,0,1,0,96.026V5.679A5.679,5.679,0,0,1,5.679,0Z" transform="translate(148.5 138.5)" fill="#88ced8"/>
+    </g>
+    <g id="Rectangle_446" data-name="Rectangle 446" transform="translate(-14832 7801)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="5">
+      <rect width="220" height="69" stroke="none"/>
+      <rect x="0.5" y="0.5" width="219" height="68" fill="none"/>
+    </g>
+    <path id="photo004_-_E016" data-name="photo004 - E016" d="M-9.989-21.364V-2.549H15.533V-21.364Zm24.592.93V-4.481L7.9-14.031l-3.362,4.2-6.117-7.458L-9.059-4.7V-20.434ZM14.173-3.479H-8.719l7.243-12.2L4.533-8.362,7.86-12.493Z" transform="translate(-14724.011 7846.364)" fill="#fff"/>
+  </g>
+</svg>

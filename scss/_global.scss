@@ -286,3 +286,12 @@ small, .small{
     text-align: center;
   }
 }
+
+input[type=color] {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+  background: none;
+  margin-right: 5px;
+}
